@@ -2,7 +2,7 @@ svg{
     height: 25px;
 }
 
-ul{
+#nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,4 +10,19 @@ ul{
 
 ul li{
     list-style: none;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 15px;
+}
+
+.menu-item svg{
+    height: 30px;
+}
+
+h3{
+    margin: 0 15px;
 }
