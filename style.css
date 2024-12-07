@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 html,
 body {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(227, 227, 228);
+    background-color: rgb(249, 253, 255);
 }
 
-.menu{
+.main{
     height: 100%;
     width: 100%;
 }
@@ -27,11 +31,14 @@ body {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 2px 8px rgb(177, 177, 177);
+    margin-bottom: 25px;
+    position: sticky;
+    top: 0;
 }
 
 .sec1 {
     height: 100%;
-    width: 30%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -57,13 +64,6 @@ body {
     align-items: center;
 }
 
-.sec1 .input input {
-    background-color: transparent;
-    border: none;
-    width: 100%;
-    outline: none;
-}
-
 .sec2 ul {
     height: 100%;
     width: auto;
@@ -71,12 +71,12 @@ body {
 
 #ul1 li {
     height: 50px;
-    width: 100px;
+    width: 110px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 5px;
+    margin: 0 10px 0 0;
 }
 
 #ul1 li:hover{
@@ -103,27 +103,24 @@ body {
     background-color: rgb(182, 182, 182);
 }
 
-#pfp {
-    height: 40px;
-    width: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 /* body style */
+
+/* left navigation */
 
 .box{
     height: 100%;
     width: 100%;
+    display: flex;
 }
 
-#left{
+.box #left{
     height: 100%;
-    width: 25%;
+    min-width: 320px;
 }
 
 #left li{
     height: 50px;
+    width: 280px;
     border-radius: 10px;
     padding: 5px 10px;
 }
@@ -132,12 +129,81 @@ body {
     background-color: rgb(199, 199, 199);
 }
 
+.menu-item .obj{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu .sm {
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(161, 161, 161);
     height: 40px;
     width: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* center content */
+
+.box .content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.content .new-post{
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(156, 156, 156);
+}
+
+
+
+.box #right{
+    height: 100%;
+    min-width: 320px;
+}
+
+.new-post .np-content{
+    padding: 8px;
+}
+
+.np-content .box{
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.img{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.np-content .input{
+    height: 40px;
+    width: 90%;
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.np-content .input input{
+    font-size: 15px;
+    font-weight: 500;
 }

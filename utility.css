@@ -16,7 +16,7 @@ ul li{
     display: flex;
     justify-content: left;
     align-items: center;
-    margin: 10px 15px;
+    margin: 0 0 10px 0;
 }
 
 .menu-item svg{
@@ -25,4 +25,18 @@ ul li{
 
 h3{
     margin: 0 15px;
+}
+
+.input input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+#pfp {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
 }
