@@ -177,7 +177,7 @@ body {
     padding: 8px;
 }
 
-.np-content .box{
+.np-content .box1{
     padding-bottom: 8px;
     display: flex;
     align-items: center;
@@ -206,4 +206,20 @@ body {
 .np-content .input input{
     font-size: 15px;
     font-weight: 500;
+}
+
+.np-content .box2{
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.np-content .box2 #ul1{
+    height: 100%;
+    display: flex;
+}
+
+.box2 #ul1 li{
+    height: 40px;
+    width: 200px;
 }
